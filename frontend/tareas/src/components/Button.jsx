@@ -6,6 +6,6 @@ export const Button = ({ children, loading, ...props }) => (
     disabled={loading || props.disabled}
     {...props}
   >
-    {/*loading ? "Cargando..." : children*/}
+    Iniciar sesión
   </button>
 );

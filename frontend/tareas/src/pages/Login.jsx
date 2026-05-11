@@ -33,7 +33,6 @@ function Login() {
       <div className="login-bg-glow"></div>
 
       <div className="login-container">
-        {/* Lado izquierdo: Info */}
         <aside className="login-aside">
           <div className="brand-content">
             <span className="brand-line"></span>
@@ -44,7 +43,6 @@ function Login() {
           </div>
         </aside>
 
-        {/* Lado derecho: Card de Login */}
         <main className="login-main">
           <Card>
             <h2 style={{ fontSize: "2rem", marginBottom: "0.5rem" }}>
@@ -81,7 +79,7 @@ function Login() {
 
               <Button
                 type="submit"
-                //loading={loading}
+                
               >
                 Iniciar Sesión
                 {loading ? "ingresando.." : "Iniciar sesión"}
