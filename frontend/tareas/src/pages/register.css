@@ -1,0 +1,58 @@
+
+.register-page {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #1F1F1F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    overflow-y: auto; /* Permitir scroll si la pantalla es pequeña */
+  }
+  
+  /* Reutilizamos el efecto de luz pero en otra posición para variar */
+  .register-bg-glow {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 80% 80%, rgba(130, 39, 39, 0.25), transparent 45%);
+    pointer-events: none;
+  }
+  
+  .register-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas para los inputs */
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  /* Hacemos que algunos inputs ocupen las dos columnas (como el email o el botón) */
+  .full-width {
+    grid-column: span 2;
+  }
+  
+  .register-header {
+    margin-bottom: 2rem;
+  }
+  
+  .register-header h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+  }
+  
+  .register-footer {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.4);
+  }
+  
+  /* Responsivo para móviles */
+  @media (max-width: 600px) {
+    .register-grid {
+      grid-template-columns: 1fr;
+    }
+    .full-width {
+      grid-column: span 1;
+    }
+  }

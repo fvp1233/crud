@@ -1,0 +1,20 @@
+:root {
+  --bg-dark: #1F1F1F;
+  --card-bg: rgba(0, 0, 0, 0.3);
+  --brand-red: #822727;
+  --text-white: #ffffff;
+  --text-dim: rgba(255, 255, 255, 0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-white);
+  min-height: screen;
+}
